@@ -36,10 +36,11 @@ defmodule BlockScoutWeb.LayoutView do
   alias BlockScoutWeb.SocialMedia
 
   def logo do
-   "/images/rikeza_logo.svg"
+    Keyword.get(application_config(), :logo) || "/images/rikeza_logo.svg"
   end
 
   def logo_footer do
+    Keyword.get(application_config(), :logo_footer) || Keyword.get(application_config(), :logo) ||
       "/images/rikeza_logo.svg"
   end
 
