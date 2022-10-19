@@ -36,11 +36,11 @@ defmodule BlockScoutWeb.LayoutView do
   alias BlockScoutWeb.SocialMedia
 
   def logo do
-   "/images/rikeza_logo.svg"
+   "images/rikeza_logo.svg"
   end
 
   def logo_footer do
-      "/images/rikeza_logo.svg"
+      "images/rikeza_logo.svg"
   end
 
   def logo_text do
